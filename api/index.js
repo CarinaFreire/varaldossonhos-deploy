@@ -8,6 +8,21 @@
 //   • Google Maps — uso dos campos lat/lng em pontos de coleta
 //   • Cloudinho — assistente automático (FAQ inteligente)
 // ============================================================
+console.log("API iniciando...");
+
+console.log("AIRTABLE_API_KEY:", process.env.AIRTABLE_API_KEY ? "OK" : "Faltando");
+console.log("AIRTABLE_BASE_ID:", process.env.AIRTABLE_BASE_ID ? "OK" : "Faltando");
+console.log("AIRTABLE_TABLE_NAME:", process.env.AIRTABLE_TABLE_NAME ? "OK" : "Faltando");
+console.log("AIRTABLE_TABLE_ADMIN:", process.env.AIRTABLE_TABLE_ADMIN ? "OK" : "Faltando");
+console.log("AIRTABLE_CARTINHAS_TABLE:", process.env.AIRTABLE_CARTINHAS_TABLE ? "OK" : "Faltando");
+console.log("AIRTABLE_EVENTOS_TABLE:", process.env.AIRTABLE_EVENTOS_TABLE ? "OK" : "Faltando");
+
+console.log("EMAILJS_SERVICE_ID:", process.env.EMAILJS_SERVICE_ID ? "OK" : "Faltando");
+console.log("EMAILJS_TEMPLATE_ID:", process.env.EMAILJS_TEMPLATE_ID ? "OK" : "Faltando");
+console.log("EMAILJS_PUBLIC_KEY:", process.env.EMAILJS_PUBLIC_KEY ? "OK" : "Faltando");
+
+console.log("NOTIFY_WHATSAPP_API:", process.env.NOTIFY_WHATSAPP_API ? "OK" : "Faltando");
+
 
 import Airtable from "airtable";
 import enviarEmail from "./lib/enviarEmail.js"; // ✅ Importação correta
